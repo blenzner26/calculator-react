@@ -102,7 +102,7 @@ body {
     align-items: center;
     transition: all .2s;
 }
-.btn:hover {
+.btn:active {
     color: var(--color-light-white);
     background-color: var(--color-my-blue);
 }
@@ -116,7 +116,7 @@ body {
     background-color: var(--color-my-blue);
     transition: all .2s;
 }
-.btn--large:hover {
+.btn--large:active {
     background-color: var(--color-white);
     color: var(--color-my-blue);
 }
