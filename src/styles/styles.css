@@ -42,7 +42,7 @@ body {
 }
 
 .calculator {
-    height: 80vh; 
+    height: 83vh; 
     width: 25%;
     box-shadow: 0 2rem 4rem var(--shadow);
     background-color: #fff;
@@ -176,12 +176,12 @@ body {
     }
 }
 
-@media screen and (min-width: 401px) and (max-width: 747px){
+@media screen and (min-width: 426px) and (max-width: 747px){
     .calculator{
         width: 50%;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 425px){
     .calculator{
         width: 100%;
     }
