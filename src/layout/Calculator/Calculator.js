@@ -1,11 +1,34 @@
 import React from 'react';
 import Screen from './Screen/Screen';
 import Keypad from './Keypad/Keypad';
+import Switch from '@material-ui/core/Switch';
+import Brightness3SharpIcon from '@material-ui/icons/Brightness3Sharp';
 
 class calculator extends React.Component {
     state = {
+        darkMode: false,
         equation: '',
         result: 0
+    }
+
+    handleChange(){
+        if (this.state.darkMode === false) {
+            this.setState({darkMode: true});
+        }
+        else if(this.state.darkMode === true) {
+            this.setState({darkMode: false});
+        }
+    }
+
+    getModeClassNames(){
+        let cssClass = "lightTheme";
+        if (this.state.darkMode === false) {
+            cssClass = "lightTheme";
+        }
+        else if(this.state.darkMode === true) {
+            cssClass = "darkTheme";
+        }
+        return cssClass;
     }
 
     onButtonPress = event => {
@@ -45,9 +68,11 @@ class calculator extends React.Component {
 
     render() {
         return (
-            <main className="calculator">
-                <Screen equation={this.state.equation} result={this.state.result} />
-                <Keypad onButtonPress={this.onButtonPress} />
+            <main className={this.getModeClassNames() + "_Calculator" + " calculator"}>
+                <Brightness3SharpIcon className={this.getModeClassNames()+ "_Icon"} />
+                <Switch className={this.getModeClassNames() + "_Switch"} color="primary" onChange={() => this.handleChange()} inputProps={{ 'aria-label': 'primary checkbox' }} />
+                <Screen className={this.getModeClassNames() + "_Screen"} equation={this.state.equation} result={this.state.result} />
+                <Keypad className={this.getModeClassNames() + "_Keypad"} onButtonPress={this.onButtonPress} />
             </main>
         );
     }
