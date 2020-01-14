@@ -69,8 +69,11 @@ class calculator extends React.Component {
     render() {
         return (
             <main className={this.getModeClassNames() + "_Calculator" + " calculator"}>
-                <Brightness3SharpIcon className={this.getModeClassNames()+ "_Icon"} />
-                <Switch className={this.getModeClassNames() + "_Switch"} color="primary" onChange={() => this.handleChange()} inputProps={{ 'aria-label': 'primary checkbox' }} />
+                <div>
+                    <Brightness3SharpIcon className={this.getModeClassNames()+ "_Icon"} /> 
+                    <Switch className={this.getModeClassNames() + "_Switch"} color="primary" onChange={() => this.handleChange()} inputProps={{ 'aria-label': 'primary checkbox' }} />
+                </div>
+               
                 <Screen className={this.getModeClassNames() + "_Screen"} equation={this.state.equation} result={this.state.result} />
                 <Keypad className={this.getModeClassNames() + "_Keypad"} onButtonPress={this.onButtonPress} />
             </main>

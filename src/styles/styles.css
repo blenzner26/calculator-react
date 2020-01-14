@@ -127,7 +127,7 @@ body {
 }
 
 .darkTheme_Calculator .screen{
-    background-color: var(--color-my-blue-dark);
+    background-color: var(--color-black);
 }
 
 .darkTheme_Calculator .btn{
@@ -135,7 +135,7 @@ body {
     color: var(--color-white);
 }
 .darkTheme_Calculator .btn--large{
-    background-color: var(--color-my-blue-dark);
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
@@ -148,6 +148,15 @@ body {
         background-color: var(--color-white);
         color: var(--color-my-blue);
     }
+    .darkTheme_Calculator .btn:hover {
+        color: var(--color-light-white);
+        background-color: var(--color-my-blue-dark);
+    }
+    .darkTheme_Calculator .btn--large:hover {
+        background-color: var(--color-my-blue-dark);
+        color: var(--color-light-white);
+    }
+    
 }
     
 @media screen and (max-width: 747px){
