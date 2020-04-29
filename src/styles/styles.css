@@ -42,7 +42,6 @@ body {
 }
 
 .calculator {
-    height: 83vh; 
     width: 25%;
     box-shadow: 0 2rem 4rem var(--shadow);
     background-color: #fff;
