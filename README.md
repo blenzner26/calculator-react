@@ -5,9 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Dependencies
 <ul>
   <li>React</li>
-  <li>Material UI Core</li>
-  <li>Google Fonts</li>
-</ul>
+  <li><a href="https://material-ui.com">Material UI</a></li>
+  <li><a href="https://fonts.google.com">Google Fonts</a></li>
+  </ul>
 
 ## Available Scripts
 
