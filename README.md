@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <ul>
   <li>React</li>
   <li>Material UI Core</li>
+  <li>Google Fonts</li>
 </ul>
 
 ## Available Scripts
