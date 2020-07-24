@@ -1,6 +1,6 @@
 # React Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a calculator app built using React and Material UI components. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Dependencies
 <ul>
