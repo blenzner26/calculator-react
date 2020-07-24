@@ -1,10 +1,10 @@
-# React.js Calculator App
+# React Calculator App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Dependencies
 <ul>
-  <li>React.js</li>
+  <li>React</li>
   <li>Material UI Core</li>
 </ul>
 
